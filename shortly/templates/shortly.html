@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block title %}Create Short URL {% endblock %}
+{% block body %}
+    <h2>{{ shortly_count }} redirects served</h2>
+    <form action="" method="POST">
+        {% if error %}
+            <p class="error"><strong>Error:</strong> {{ error }}
+        {% endif %}
+        <p>URL:
+            <input type="text" name="url" value="{{ url }}" class="urlinput">
+            <input type="submit" value="Shorten">
+    </form>
+{% endblock %}

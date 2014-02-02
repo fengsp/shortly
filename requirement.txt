@@ -1,0 +1,4 @@
+Flask==0.10.1
+gunicorn==18.0
+supervisor==3.0
+redis==2.8.0
