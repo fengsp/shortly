@@ -2,7 +2,7 @@
     shortly.app
     ~~~~~~~~~~~
 
-    Shortly app.
+    Shortly app inspired by http://werkzeug.pocoo.org/docs/tutorial/.
 
     :copyright: (c) 2014 by fsp.
     :license: BSD.

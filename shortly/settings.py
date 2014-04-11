@@ -19,5 +19,9 @@ if os.path.exists(os.path.join(os.path.dirname(__file__), 'debug')):
 
 if DEBUG:
     REDIS_HOST = 'localhost'
+    REDIS_PORT = 6379
+    REDIS_DB = 0
 else:
-    REDIS_HOST = 'production_host'
+    REDIS_HOST = 'localhost'
+    REDIS_PORT = 6379
+    REDIS_DB = 0

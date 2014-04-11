@@ -36,7 +36,7 @@ def shorten(url):
 def shortly():
     error = None
     url = ''
-    shortly_count = db.get('shortly-count')
+    shortly_count = db.get('shortly-count') or '0'
     if request.method == 'POST':
         url = request.form['url']
         if not is_valid_url(url):

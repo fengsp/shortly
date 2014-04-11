@@ -14,5 +14,5 @@ from redis import Redis
 from shortly import app
 
 
-db = Redis(host=app.config['REDIS_HOST'])
-
+db = Redis(host=app.config['REDIS_HOST'], port=app.config['REDIS_PORT'], 
+           db=app.config['REDIS_DB'])
